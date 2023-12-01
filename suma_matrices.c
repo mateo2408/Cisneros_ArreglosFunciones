@@ -54,6 +54,17 @@ int main()
         printf("\n");
     }
     printf("\n");
-
+    
+    //Realizamos la suma y la imprimimos
+            printf("Suma de Matriz C: \n");
+            for (int i = 0; i < filas; i++)
+            {
+                for (int j = 0; j < columnas; j++)
+                {
+                    printf("%d\t", suma(A[i][j], B[i][j]));
+                }
+                printf("\n");
+            }
+            printf("\n");
     return 0;
 }
