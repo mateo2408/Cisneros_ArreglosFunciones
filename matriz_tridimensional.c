@@ -14,6 +14,16 @@ int cero(int)
 
 int main()
 {
-    /* code */
+    //Se pide el tamaño de las matrices
+    int capas;
+    int filas;
+    int columnas;
+    printf("Ingrese el número de matrices: ");
+    scanf("%d", &capas);
+    printf("Ingrese el número de filas de las matrices: ");
+    scanf("%d", &filas);
+    printf("Ingrese el número de columnas de las matrices: ");
+    scanf("%d", &columnas);
+    
     return 0;
 }
