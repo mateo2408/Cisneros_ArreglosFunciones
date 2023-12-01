@@ -32,5 +32,28 @@ int main()
             B[i][j]=rand()%100;
         }
     }
+    //Imprimimos las matrices
+    printf("Matriz A:\n");
+    for (int i = 0; i < filas; i++)
+    {
+        for (int j = 0; j < columnas; j++)
+        {
+            printf("%d\t", A[i][j]);
+        }
+        printf("\t\n");
+    }
+    printf("\n");
+
+    printf("Matriz B:\n");
+    for (int i = 0; i < filas; i++)
+    {
+        for (int j = 0; j < columnas; j++)
+        {
+            printf("%d\t", B[i][j]);
+        }
+        printf("\n");
+    }
+    printf("\n");
+
     return 0;
 }
