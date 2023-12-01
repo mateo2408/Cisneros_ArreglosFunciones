@@ -3,17 +3,21 @@
 
 #include<stdio.h>
 //Definimos los 1 y 0 como funciones
-int uno(int)
+int uno(int a)
 {
-    return 1;
+    a = 1;
+    return a;
 }
-int cero(int)
+int cero(int b)
 {
-    return 0;
+    b = 0;
+    return b;
 }
 
 int main()
 {
+    int a;
+    int b;
     //Se pide el tamaño de las matrices
     int capas;
     int filas;
@@ -35,7 +39,7 @@ int main()
         {
             for (int j = 0; j < columnas; j++)
             {
-                arreglo[k][i][j]=uno;
+                arreglo[k][i][j]=uno(a);
             }   
         }
     }
@@ -47,9 +51,23 @@ int main()
         {
             for (int j = 0; j < columnas; j++)
             {
-                arreglo[k-1][i][j]=0;
+                arreglo[k-1][i][j]=cero(b);
             }   
         } 
+    }
+
+    //Imprimimos las matrices
+    for (int k = 0; k < capas; k++)
+    {
+        printf("Matriz %d\n", k);
+        for (int i = 0; i < filas; i++)
+        {
+            for (int j = 0; j < columnas; j++)
+            {   
+                printf("%d", arreglo[k][i][j]);
+            } 
+            printf("\n"); 
+        }
     }
     return 0;
 }
