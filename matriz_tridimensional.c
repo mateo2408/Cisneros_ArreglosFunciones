@@ -24,6 +24,22 @@ int main()
     scanf("%d", &filas);
     printf("Ingrese el número de columnas de las matrices: ");
     scanf("%d", &columnas);
-    
+
+    //Definimos la matriz
+    int arreglo[capas][filas][columnas];
+
+    //Se establecen la ultima matriz en uno
+    for (int k = 0; k < capas; k++)
+    {
+        for (int i = 0; i < filas; i++)
+        {
+            for (int j = 0; j < columnas; j++)
+            {
+                arreglo[k][i][j]=uno;
+            }   
+        }
+    }
+
+
     return 0;
 }
