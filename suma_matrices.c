@@ -56,7 +56,7 @@ int main()
     printf("\n");
     
     //Realizamos la suma y la imprimimos
-            printf("Suma de Matriz C: \n");
+            printf("Suma de Matrices: \n");
             for (int i = 0; i < filas; i++)
             {
                 for (int j = 0; j < columnas; j++)
